@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1261px" height="1214px" viewBox="0 0 1261 1214" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval main screen</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="78.1641653%" cy="100%" fx="78.1641653%" fy="100%" r="95.8602805%" gradientTransform="translate(0.781642,1.000000),scale(0.882829,1.000000),rotate(47.114441),scale(1.000000,0.953137),translate(-0.781642,-1.000000)" id="radialGradient-1">
+            <stop stop-color="#74BCF5" offset="0%"></stop>
+            <stop stop-color="#0B7FE5" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Oval-main-screen" transform="translate(-185.000000, -229.000000)" fill="url(#radialGradient-1)">
+            <path d="M831.298437,1435.992 C1149.6906,1472.63389 1442.18202,1244.23018 1484.59631,925.83802 C1527.01061,607.445862 1234.51919,319.633894 831.298437,282.991998 C428.077686,246.350101 135.586264,474.753817 178.00056,793.145975 C220.414856,1111.53813 512.906279,1399.3501 831.298437,1435.992 Z" id="Oval-2-Copy" transform="translate(831.298437, 859.491998) rotate(-60.000000) translate(-831.298437, -859.491998) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+#node modules
+/node_modules
+
+#gulp file
+gulpfile.js
+
+#package file
+package.json
+
+#debug
+debug.log
