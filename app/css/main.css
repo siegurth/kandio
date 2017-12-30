@@ -838,7 +838,7 @@ article {
         margin-right: 2%; }
     article.wide h6 {
       font-family: AvenirNext;
-      font-size: 28px;
+      font-size: 2vw;
       font-weight: bold;
       color: #4a4a4a;
       padding-bottom: 4vh;
@@ -846,7 +846,7 @@ article {
       article.wide h6:after {
         content: '';
         display: block;
-        width: 120px;
+        width: 12vw;
         height: 4px;
         position: absolute;
         left: 0;
@@ -854,7 +854,7 @@ article {
         background-color: #0b7fe5; }
     article.wide p {
       font-family: 'Source Sans Pro', sans-serif;
-      font-size: 20px;
+      font-size: 1.5vw;
       color: #1b2c42;
       margin-top: 3vh; }
     article.wide .pageStage {
@@ -959,23 +959,23 @@ article {
     margin-top: 2vh; }
   article p {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 1.4vw;
     margin-top: 4vh;
-    line-height: 25px;
+    line-height: 3vh;
     display: none; }
   article .order {
     display: block;
-    height: 52px;
-    width: 190px;
+    height: 5.2vh;
+    width: 13.5vw;
     border: 1px solid #fff;
     -webkit-border-radius: 6px;
             border-radius: 6px;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    line-height: 52px;
+    font-size: 1.5vw;
+    line-height: 5.2vh;
     font-weight: 600;
-    padding-left: 60px;
+    padding-left: 4vw;
     background: url("../img/Play button.svg") no-repeat 10px 50%/30px 30px;
     position: absolute;
     left: 10vw;
@@ -986,9 +986,9 @@ article {
     left: 10vw;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 600;
-    padding-right: 20px;
+    padding-right: 2vw;
     background: url("../img/Scroll down.svg") no-repeat 100% 50%/15px 15px; }
   article .indication {
     position: absolute;
@@ -1110,43 +1110,43 @@ form {
     color: #0b7fe5; }
   form p {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     color: #1b2c42;
     margin-top: 3vh; }
   form input[type=text] {
     border: 1px solid;
     border-color: transparent transparent #bebebe;
-    padding: 0 10px;
+    padding: 0 1vw;
     opacity: 0.4;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    height: 50px;
+    font-size: 1.3vw;
+    height: 5vh;
     color: #1b2c42;
     margin-top: 3vh;
     width: 100%; }
   form textarea {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+    font-size: 1.3vw;
     color: #1b2c42;
     opacity: 0.4;
     margin-top: 3vh;
     border: 1px solid;
     border-color: transparent transparent #bebebe;
-    padding: 10px;
-    height: 106px;
+    padding: 1vh 1vw;
+    height: 10vh;
     width: 100%;
     resize: none;
     overflow: auto; }
   form input[type=submit] {
     margin-top: 5vh;
-    width: 243px;
-    height: 52px;
+    width: 16vw;
+    height: 5.1vh;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     border: solid 1px #0b7fe5;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 1.7vw;
     font-weight: 600;
     color: #0b7fe5;
     cursor: pointer;
@@ -1158,29 +1158,28 @@ footer {
   footer > div {
     height: auto; }
     footer > div.top-line {
-      min-height: 312px;
+      min-height: 26vh;
       background-color: #1b2c42;
       padding-top: 6vh;
-      min-height: 250px;
       height: auto; }
       footer > div.top-line div {
         width: 20%;
         float: left;
         color: #fff; }
         footer > div.top-line div h2 {
-          background: url("../img/Kandio Logo header.svg") no-repeat 0 0/cover;
-          width: 157px;
-          height: 26px; }
+          background: url("../img/Kandio Logo header.svg") no-repeat 0 0/100% 100%;
+          width: 10vw;
+          height: 3vh; }
           footer > div.top-line div h2 a {
             line-height: 0;
             font-size: 0;
             color: transparent; }
         footer > div.top-line div h4 {
           font-family: 'Montserrat', sans-serif;
-          font-size: 16px;
+          font-size: 1.2vw;
           font-weight: bold;
           color: #999;
-          line-height: 22px;
+          line-height: 2vh;
           text-transform: uppercase;
           padding-right: 1vw;
           padding-bottom: 2vh;
@@ -1201,14 +1200,14 @@ footer {
             height: 16px; }
         footer > div.top-line div p {
           font-family: 'Source Sans Pro', sans-serif;
-          font-size: 18px;
+          font-size: 1.3vw;
           width: 50%;
-          line-height: 25px; }
+          line-height: 2.7vh; }
         footer > div.top-line div a {
           font-family: 'Source Sans Pro', sans-serif;
-          font-size: 18px;
+          font-size: 1.3vw;
           width: 50%;
-          line-height: 25px;
+          line-height: 2.7vh;
           color: #fff;
           clear: both; }
         footer > div.top-line div ul li {
@@ -1230,14 +1229,14 @@ footer {
             border: none; }
         footer > div.top-line div span {
           font-family: 'Source Sans Pro', sans-serif;
-          font-size: 18px;
+          font-size: 1.3vw;
           width: 50%;
-          line-height: 25px;
+          line-height: 2.7vh;
           line-height: 1; }
         footer > div.top-line div:first-child {
           padding-left: 3vw; }
     footer > div.low-line {
-      min-height: 63px;
+      min-height: 6vh;
       height: auto;
       background-color: #121f2f;
       display: -webkit-box;
@@ -1259,18 +1258,18 @@ footer {
       footer > div.low-line div {
         color: #fff;
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 12px; }
+        font-size: 1.2vw; }
         footer > div.low-line div a {
           color: #fff;
           font-family: 'Source Sans Pro', sans-serif;
-          font-size: 12px; }
+          font-size: 1.2vw; }
         footer > div.low-line div span {
           color: #fff;
           font-family: 'Source Sans Pro', sans-serif;
-          font-size: 12px;
+          font-size: 1.2vw;
           margin: 0 0.5vw; }
         footer > div.low-line div .back-to-top {
-          padding-right: 40px;
+          padding-right: 3vw;
           line-height: 32px;
           background: url("../img/Up button.svg") no-repeat 100% 50%/32px 32px;
           display: inline-block; }
