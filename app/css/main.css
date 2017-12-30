@@ -869,7 +869,7 @@ article {
     article.wide .link-board {
       width: 35%;
       height: 48vh;
-      margin-top: 11vh;
+      margin-top: 20vh;
       float: left;
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -924,7 +924,24 @@ article {
               border-radius: 7px;
       float: left;
       width: 65%;
-      height: 48vh; }
+      height: 48vh;
+      margin-top: 10vh;
+      overflow: hidden; }
+      article.wide .link-box ul {
+        width: 100%;
+        height: 100%; }
+        article.wide .link-box ul img {
+          width: 100%;
+          height: auto;
+          display: inline-block;
+          border: none; }
+        article.wide .link-box ul li {
+          float: left;
+          width: 100%;
+          height: 100%;
+          display: none; }
+          article.wide .link-box ul li.active {
+            display: block; }
   article h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 10vh;
