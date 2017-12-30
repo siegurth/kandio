@@ -747,7 +747,8 @@ section {
     background-repeat: no-repeat;
     background-image: url("../img/Oval section 4.png");
     -webkit-background-size: cover;
-            background-size: cover; }
+            background-size: cover;
+    display: none; }
   section.onView article {
     height: 100%;
     opacity: 1; }
@@ -960,7 +961,8 @@ article {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     margin-top: 4vh;
-    line-height: 25px; }
+    line-height: 25px;
+    display: none; }
   article .order {
     display: block;
     height: 52px;

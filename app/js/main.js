@@ -37,7 +37,8 @@ $(window).on('resize scroll', function() {
   $('.scrollable').each(function() {
     if ($(this).isInViewport()) {
       $(this).addClass('onView');
-      $('.scrollable p').delay(1500).css('opacity','1');
+      $('.scrollable p').delay(1500).fadeIn(500);
+      $('section .circle-2').delay(2000).fadeIn(500);
     } else {
       //$(this).removeClass('onView');
   	}

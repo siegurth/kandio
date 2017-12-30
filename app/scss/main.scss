@@ -297,6 +297,7 @@ section {
     background-repeat: no-repeat;
     background-image: url('../img/Oval section 4.png');
     background-size: cover;
+    display: none;
 	}
 	&.onView {
 		article {
@@ -519,6 +520,7 @@ article {
 		font-size: 20px;
 		margin-top: 4vh;
 		line-height: 25px;
+		display: none;
 	}
 	.order {
 		display: block;
