@@ -1,6 +1,9 @@
 #node modules
 /node_modules
 
+#requirements
+/req
+
 #gulp file
 gulpfile.js
 

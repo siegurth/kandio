@@ -11,6 +11,7 @@ $(document).ready(function(){
 		}
 		else {
 			$('.popup').removeClass('mob');	
+			$('.scrollable').height(height);
 		}
 	});
 /* end height section */
@@ -36,10 +37,11 @@ $(window).on('resize scroll', function() {
   $('.scrollable').each(function() {
     if ($(this).isInViewport()) {
       $(this).addClass('onView');
+      $('.scrollable p').delay(1500).css('opacity','1');
     } else {
       //$(this).removeClass('onView');
-    }
-  });
+  	}
+	});
 });
 /* end scroll window detect */
 
@@ -76,11 +78,11 @@ $(window).on('load', function(){
 
 /* popup */
 	$('.order').click(function(){
-		$(this).parents('.wrapper').children('.popup').fadeIn(500);
+		$(this).parents('.wrapper').children('.popupBox').fadeIn(500);
 		return false;
 	});
 	$('.popup .close').click(function(){
-		$('.popup').fadeOut(500);
+		$('.popupBox').fadeOut(500);
 		return false;
 	});
 /* end popup */
@@ -111,6 +113,20 @@ $('.link-board a').click(function(event){
 
 });
 /* end social block */
+
+/* gif block */
+	(new Image()).src = "../img/Iphone-animation.gif"; 
+  $(".phoneHolder").click(function () {
+  	$(this).addClass('animated');
+  	$(this).children("img").attr("src", "img/Iphone-animation.gif");
+    /*if ($(this).children("img").attr("data-state") == "static") {
+      $(this).children("img").attr("src", "img/Iphone-animation.gif");
+    } else {
+      $(this).children("img").attr("src", "img/iphone.png");
+    }*/
+  });
+/* end gif block*/
+
 
 /* scroll through slides */
 

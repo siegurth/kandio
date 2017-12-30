@@ -8,8 +8,18 @@
 @media screen and (max-width: 768px) {
 	.wrapper {
 		.popup.mob {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: auto;
+			border-radius: 0;
+			padding-bottom: 10vh;
 			.close {
-		    background: url(../img/close-icon-blue.svg) no-repeat 0 0 / cover;
+		    background: url(../img/close-icon-blue.svg) no-repeat 0 0 / 100% 100%;
+		    top: 5vh;
+		    right: 5vw;
+		    width: 4vw;
+		    height: 4vh;
 			}
 			.circle {
 				display: none;
@@ -17,10 +27,18 @@
 			.box {
 				display: none;
 			}
+			.logo {
+				display: block;
+				background: url('../img/Kandio logo mobile header.svg') no-repeat 0 0 / 100% 100%;
+				width: 30vw;
+    		height: 10vh;
+    		margin: 2vh 0 0 36vw;
+			}
 			form {
 				width: 100%;
 				h4 {
 					text-align: center;
+					font-size: 9vw;
 				}
 				p {
 					display: none;
@@ -47,18 +65,19 @@
 		}
 		.logo {
 			order: 2;
+			margin-top: 1vh;
 			a {
-				width: 108px;
-				height: 18px;	
+		    width: 35vw;
+    		height: 4vh;
 			}
 		}
 		.login {
 			order: 3;
-			width: 32px;
-			height: 32px;
 			padding: 0;
 			text-indent: -9999px;
-			background: url('../img/login-white.svg') no-repeat 50% 50% / 15px 15px;
+	    width: 9vw;
+    	height: 5vh;
+    	background: url(../img/login-white.svg) no-repeat 50% 50%/5vw 5vh;
 		}
 	}
 	section {
@@ -68,11 +87,14 @@
 			padding-top: 7vh;
 			.order {
 				display: block;
-				left: 37vw;
-			}
-			.phonebox {
-				width: 100%;
-				height: auto;
+				left: 25vw;
+				bottom: 5vh;
+		    height: 6vh;
+    		width: 50vw;
+    		font-size: 5vw;
+    		line-height: 6vh;
+    		padding-left: 13vw;
+    		background: url('../img/Play button.svg') no-repeat 5% 50%/10vw 10vh;
 			}
 		}
 		&.onView {
@@ -82,13 +104,32 @@
 			figure {
 				width: 100%;
 			}
+			h4 {
+				&:after {
+					width: 40vw;
+				}
+			}
+		}
+	}
+	.phonebox {
+		width: 90%;
+		height: auto;
+		margin-right: 5% !important;
+		>div {
+			background: url('../img/iphone .png') no-repeat 50% 0 / cover;
+    	overflow: hidden;
+    	width: 100vw;
+    	height: 60vh;
+    	&.animated {
+				padding: 1.3vh 6vw 2vw;
+			}
 		}
 	}
 	article {
 		width: 100%;
 		height: auto;
 		min-height: 50vh;
-		padding-top: 6vh;
+		padding-top: 15vh;
     padding-left: 3vw;
     padding-right: 3vw;
 		padding-bottom: 3vh;
@@ -111,13 +152,28 @@
 			.block {
 				width: 90%;
 				margin: 0 5%;
+				padding: 2vh 2vw;
 				&:nth-child(2) {
 					margin: 5%;
+				}
+				.pageStage {
+					top: 2vh;
+    			left: 35vw;
+				}
+				figure {
+					text-align: center;
+			    margin-top: 3vh;
+			    max-height: 32vh;
+				}
+				h6 {
+			    font-size: 7vw;
+    			padding-bottom: 2vh;
 				}
 			}
 			h6:after {
 				left: 50%;
-				margin-left: -60px;
+		    margin-left: -20vw;
+    		width: 40vw;
 			}
 			.link-board {
 				width: 100%;
@@ -129,11 +185,27 @@
 				li {
 					float: left;
 					width: 25%;
+					border-bottom: 3px solid;
+					border-color: transparent;
+					&:hover {
+						&:before {
+							display: none;
+						}
+					}
 					&.active {
-						border-bottom: 3px solid #fff;
+						border-color: #fff;
+						&:before {
+							display: none;
+						}
 					}
 					&:after {
 						display: none;
+					}
+					&:before {
+						display: none;
+					}
+					a {
+						font-size: 5vw;
 					}
 				}
 			}
@@ -151,22 +223,32 @@
 				}
 			}
 		}
-		
+		h3 {
+			font-size: 10vw;
+		}
+		h2 {
+			font-size: 11vw;
+		}
+		h4 {
+			&:after {
+		    left: 50%;
+    		margin-left: -20vw;
+			}
+		}
+		h5 {
+			font-size: 5vw;
+			width: 80%;
+			margin-left: 10%;
+    	text-align: center;
+		}
 		.order {
 			display: none;
 		}
 		.scroll-down {
-			left: 37vw;
+			display: none;
 		}
 		.indication {
 			display: none;
-		}
-		
-		h4 {
-			&:after {
-		    left: 50%;
-    		margin-left: -60px;
-			}
 		}
 	}
 	figure {
@@ -176,7 +258,9 @@
     &.medium {
     	width: 100% !important;
     }
-		//margin-top: 9vh;
+    &.left-aligned {
+    	display: none;
+    }
 		img {
 			max-width: 80vw;
 			height: auto;
@@ -186,6 +270,37 @@
 	form {
 		width: 100% !important;
 		margin: 0;
+		height: auto;
+		border-radius: 0;
+		padding-bottom: 5vh;
+		h4 {
+			font-size: 10vw;
+	    text-align: center;
+		}
+		p {
+			font-size: 7vw;
+			text-align: center;
+		}
+		input[type=text] {
+			padding: 0 2vw;
+			font-size: 6vw;
+			height: 6vh;
+			margin-top: 3vh;
+			width: 100%;
+		}
+		textarea {
+			font-size: 6vw;
+    	margin-top: 3vh;
+      padding: 2vh 2vw;
+  	  height: 14vh;
+    	width: 100%;
+		}
+		input[type=submit] {
+    	margin-top: 5vh;
+    	width: 100%;
+    	height: 7vh;
+	    font-size: 9vw;
+		}
 	}
 	footer {
 		height: auto;
@@ -206,29 +321,30 @@
 			.social {
 		    margin: 0 auto;
     		display: block;
-    		width: 20vw;
+    		width: 40vw;
+	    	margin-left: 35vw;
 			}
 		}
 		.low-line {
 			justify-content: center;
 			flex-direction: column;
 			padding: 2vh 0;
+			position: relative;
 			div {
-				line-height: 22px;
+				line-height: 3vh;
+				font-size: 4vw;
 				position: relative;
 			}
 			div:last-child {
-				align-self: start;
-    		margin-top: -15px;
-
-			}
-			.back-to-top {
 				position: absolute;
 				left: 50%;
-				width: 32px;
+				margin-left: -6vw;
+				top: -3vh;
+			}
+			.back-to-top {
+				width: 12vw;
+    		padding: 0;
 				text-indent: -999px;
-				margin-left: -20px;
-				top: -69px;
 			}
 		}
 	}

@@ -14,20 +14,24 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="popup">
-			<a href="#" class="close"></a>
-			<form action="#">
-				<h4>Order Demo</h4>
-				<p>All your questions can be solved in a minute. Write us and see all Kandio features.</p>
-				<input type="text" placeholder="Type your name" required>
-				<input type="text" placeholder="Phone number" required>
-				<input type="text" placeholder="E-mail" required>
-				<textarea name="message" placeholder="Your message (if any)"></textarea>
-				<input type="submit" value="Submit">
-			</form>
-			<div class="box"></div>
-			<div class="circle blue">&nbsp;</div>
+		<div class="popupBox">
+			<div class="popup">
+				<a href="#" class="close"></a>
+				<a href="#" class="logo"></a>
+				<form action="#">
+					<h4>Order Demo</h4>
+					<p>All your questions can be solved in a minute. Write us and see all Kandio features.</p>
+					<input type="text" placeholder="Type your name" required>
+					<input type="text" placeholder="Phone number" required>
+					<input type="text" placeholder="E-mail" required>
+					<textarea name="message" placeholder="Your message (if any)"></textarea>
+					<input type="submit" value="Submit">
+				</form>
+				<div class="box"></div>
+				<div class="circle blue">&nbsp;</div>
+			</div>
 		</div>
+		
 		<div class="mobile">
 			<a href="#" class="close"></a>
 			<h1 class="logo"><a href="#">kandio</a></h1>
@@ -107,7 +111,9 @@
 					<a href="#" class="order">Book a Demo </a>
 				</article>
 				<div class="phonebox">
-					<div></div>
+					<div class="phoneHolder">
+						<img src="img/iphone.png" alt="cellphone">
+					</div>
 				</div>
 			</section>
 			<section class="slide scrollable s5">
@@ -148,7 +154,7 @@
 					<h3>Amazing ads</h3>
 
 						<ul class="link-board">
-							<li><a href="#">Facebook</a></li>
+							<li class="active"><a href="#">Facebook</a></li>
 							<li><a href="#">Twitter</a></li>
 							<li><a href="#">Google</a></li>
 							<li><a href="#">Instagram</a></li>
@@ -166,7 +172,7 @@
 			</section>
 			<section class="slide scrollable s7">
 				<figure class="left-aligned middle-image medium"><img src="img/man at table.png" alt="img"></figure>
-				<form action="#">
+				<form action="#" class="orderDemo">
 					<h4>Order Demo</h4>
 					<p>All your questions can be solved in a minute. Write us and see all Kandio features.</p>
 					<input type="text" placeholder="Type your name" required>
