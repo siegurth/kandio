@@ -651,9 +651,10 @@ article {
 	}
 	.indication {
 		position: absolute;
-		left: 5vw;
-    top: 50vh;
-		width: 15px;
+    left: 5vw;
+    top: 50%;
+    width: 15px;
+    margin-top: -37px;
 		li {
 			width: 15px;
 			height: 15px;
