@@ -692,6 +692,9 @@ figure {
 	&.middle-image {
 		justify-content: center;
 		align-items: center;
+		img {
+			max-width: 80% !important;
+		}
 	}
 	&.left-aligned {
 		float: left;
@@ -704,11 +707,12 @@ figure {
 		img {
 			transition: opacity 2.5s;
 			opacity: 0;
+			max-width: 90%;
 		}
 	}
 	img {
 		@include img();
-		max-width: 90%;
+		
 	}
 }
 .phonebox {

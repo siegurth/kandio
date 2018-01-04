@@ -1204,6 +1204,8 @@ figure {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    figure.middle-image img {
+      max-width: 80% !important; }
   figure.left-aligned {
     float: left; }
   figure.medium {
@@ -1213,13 +1215,13 @@ figure {
     -webkit-transition: opacity 2.5s;
     -o-transition: opacity 2.5s;
     transition: opacity 2.5s;
-    opacity: 0; }
+    opacity: 0;
+    max-width: 90%; }
   figure img {
     width: 100%;
     height: auto;
     display: inline-block;
-    border: none;
-    max-width: 90%; }
+    border: none; }
 
 .phonebox {
   float: right;
