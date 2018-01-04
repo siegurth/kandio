@@ -406,7 +406,7 @@ article {
 	}
 	&.wide {
 		width: 100%;
-		padding: 10vh 1.3vw 0; 
+		padding: 10vh 10vw 0; 
 		&.padding {
 			padding-right: 10vw;
 			padding-left: 10vw;
@@ -483,20 +483,22 @@ article {
 		}
 		p {
 			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 1.5vw;
+			//font-size: 1.5vw;
+			font-size: 18px;
 			color: #1b2c42;
 			margin-top: 3vh;
+			&.pageStage {
+				font-family: 'Montserrat', sans-serif;
+	  		font-size: 14px;
+	  		font-weight: 700;
+				color: #0b7fe5;
+				margin: 0; 
+				position: absolute;
+				top: 4vh;
+				left: 4vw;
+			}
 		}
-		.pageStage {
-			font-family: 'Montserrat', sans-serif;
-  		font-size: 14px;
-  		font-weight: 700;
-			color: #0b7fe5;
-			margin: 0; 
-			position: absolute;
-			top: 4vh;
-			left: 4vw;
-		}
+		
 		.link-board {
 			width: 35%;
 			//height: 48vh;

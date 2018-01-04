@@ -335,7 +335,7 @@ section {
           margin: 5%; }
         .wrapper article.wide .block .pageStage {
           top: 2vh;
-          left: 35vw; }
+          left: 30vw; }
         .wrapper article.wide .block figure {
           text-align: center;
           margin-top: 3vh;
@@ -344,7 +344,8 @@ section {
           font-size: 3.1vh;
           padding-bottom: 3.1vh; }
         .wrapper article.wide .block p {
-          font-size: 14px; }
+          font-size: 18px;
+          line-height: 1.2; }
       .wrapper article.wide h6:after {
         left: 50%;
         margin-left: -15vw;
@@ -901,7 +902,7 @@ article {
     padding-top: 40vh; }
   article.wide {
     width: 100%;
-    padding: 10vh 1.3vw 0; }
+    padding: 10vh 10vw 0; }
     article.wide.padding {
       padding-right: 10vw;
       padding-left: 10vw; }
@@ -994,18 +995,18 @@ article {
         background-color: rgba(27, 44, 66, 0.15); }
     article.wide p {
       font-family: 'Source Sans Pro', sans-serif;
-      font-size: 1.5vw;
+      font-size: 18px;
       color: #1b2c42;
       margin-top: 3vh; }
-    article.wide .pageStage {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      color: #0b7fe5;
-      margin: 0;
-      position: absolute;
-      top: 4vh;
-      left: 4vw; }
+      article.wide p.pageStage {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #0b7fe5;
+        margin: 0;
+        position: absolute;
+        top: 4vh;
+        left: 4vw; }
     article.wide .link-board {
       width: 35%;
       height: auto;
