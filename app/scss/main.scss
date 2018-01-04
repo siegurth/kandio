@@ -89,6 +89,10 @@
 				font-size: 4vw;
 			}
 		}
+		&.success {
+			display: none;
+
+		}
 	}
 }
 
@@ -702,7 +706,7 @@ figure {
 	}
 	img {
 		@include img();
-		max-width: 800px;
+		max-width: 90%;
 	}
 }
 .phonebox {

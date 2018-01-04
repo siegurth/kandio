@@ -581,6 +581,8 @@ section {
       margin: 0; }
       .wrapper .popup form h4 {
         font-size: 4vw; }
+    .wrapper .popup.success {
+      display: none; }
 
 /* header */
 header {
@@ -1216,7 +1218,7 @@ figure {
     height: auto;
     display: inline-block;
     border: none;
-    max-width: 800px; }
+    max-width: 90%; }
 
 .phonebox {
   float: right;
