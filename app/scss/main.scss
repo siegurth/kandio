@@ -49,26 +49,27 @@
 			top: 1.4vh;
 			right: 1.4vw;
 			z-index: 50;
-			width: 1.4vw;
-  		height: 1.4vh;
+			width: 2vw;
+  		height: 2vh;
   		display: block;
-  		background: url('../img/close icon white.svg') no-repeat 0 0 / cover;
+  		background: url('../img/close_icon_white.svg') no-repeat 0 0 / 100% 100%;
 		}
 		.circle{
 			&.blue {
 				position: absolute;
-				top: 0;
-				right: 0;
-				width: 50%;
-				z-index: 2;
-				height: 100%;
-				background: url('../img/Oval-section-1-reverse.png') no-repeat 50% 50% / cover;
+				top: -15%;
+		    right: -5%;
+		    width: 50%;
+		    z-index: 2;
+		    height: 150%;
+				background: url('../img/Oval_main_screen.svg') no-repeat 50% 50% / cover;
 				border-radius: 50% 0 0 50%;
 			}
 		}
 		.box {
 			border-radius: 6px;
-		  background-color: #f9f9f9;
+			//background-color: #f9f9f9;
+			background-color: #1b2c42;
 		  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
 		  float: right;
 		  position: relative;
@@ -116,7 +117,7 @@ header {
 	  display: inline-block;
 	  a {
 	  	display: block;
-	  	background-image: url('../img/Kandio Logo header.svg');
+	  	background-image: url('../img/Kandio_Logo_header.svg');
 	    background-repeat: no-repeat;
 	    background-size: 100% 100%;
 	    width: 15vw;
@@ -127,9 +128,11 @@ header {
 	}
 	.sandwich-menu {
 		display: none;
-		width: 7vw;
-		height: auto;
-		span {
+		//width: 7vw;
+		width: 17px;
+		height: 13px;
+		background: url('../img/burger-white.svg') no-repeat 50% 50% / 100% 100%;
+		/*span {
 			float: left;
 			width: 100%;
 			height: .7vh;
@@ -137,7 +140,7 @@ header {
 			&+span {
 				margin-top: .7vh;
 			}
-		}
+		}*/
 	}
 	.login {
 		line-height: 3.4vh;
@@ -180,7 +183,7 @@ header {
 	border: 1px solid #3399ff;
 	padding: 2vh 2vw;
 	.close {
-		background: url('../img/close-icon-blue.svg') no-repeat;
+		background: url('../img/close_icon_blue.svg') no-repeat;
 		width: 6vw;
 		height: 4vh;
 		display: block;
@@ -199,7 +202,7 @@ header {
   	display: block;
 	  a {
 	  	display: block;
-	  	background-image: url('../img/Kandio logo mobile header.svg');
+	  	background-image: url('../img/Kandio_logo_mobile_header.svg');
 	    background-repeat: no-repeat;
 	    background-size: 100% 100%;
 	  	width: 100%;
@@ -213,7 +216,7 @@ header {
 		height: 4vh;
 		padding: 0;
 		text-indent: -9999px;
-		background: url('../img/Login icon.svg') no-repeat 50% 50% / 60% 60%;
+		background: url('../img/Login_icon.svg') no-repeat 50% 50% / 60% 60%;
 		display: block;
 		position: absolute;
 		top: 3vh;
@@ -249,7 +252,7 @@ header {
     line-height: 9vh;
     font-weight: 600;
     padding-left: 20vw;
-		background: url('../img/play-button-blue.svg') no-repeat 10px 50% /8vw 8vh;
+		background: url('../img/Play_button_blue.svg') no-repeat 10px 50% /8vw 8vh;
 		position: absolute;
     left: 20vw;
     bottom: 10vh;
@@ -264,8 +267,12 @@ section {
   width: 100%;
   float: left;
   position: relative;
+  overflow: hidden;
   &.main-view {
   	padding-top: 70px;
+  }
+  &.section {
+		opacity: 0;
   }
   &.s1 {background-image: radial-gradient(circle at 100% 50%, #38a9e1, #0869c2);}
 	&.s2 {background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);}
@@ -277,29 +284,76 @@ section {
 	.circle {
 		position: absolute;
 		z-index: 1;
-		height: 100%;
-		width: 50%;
-		top: 0;
+    height: 150%;
+    width: 50%;
+    top: -20%;
 		left: 0;
 		background-position: 100% 50%;
     background-repeat: no-repeat;
-    background-image: url('../img/Oval section 1.png');
+    background-image: url('../img/Oval_main_screen.svg');
     background-size: cover;
+    display: none;
 	}
 	.circle-2 {
 		position: absolute;
 		z-index: 1;
-		height: 100%;
-		width: 50%;
-		top: 0;
+		height: 130%;
+    width: 50%;
+    top: -20%;
 		right: 0;
 		background-position: 0 50%;
     background-repeat: no-repeat;
-    background-image: url('../img/Oval section 4.png');
+    background-image: url('../img/Oval_feature_3.svg');
+    background-size: cover;
+    display: none;
+	}
+	.circle-3 {
+		position: absolute;
+		z-index: 1;
+		height: 125%;
+    width: 80%;
+    top: -20%;
+    left: 0;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-image: url('../img/Ovals_mailstyrning.svg');
     background-size: cover;
     display: none;
 	}
 	&.onView {
+		article {
+			height: 100%;
+			opacity: 1;
+		}
+		.order {
+			opacity: 1;
+		}
+		figure {
+			margin-right: 0;
+			&.medium {
+				margin-left: 0;
+			}
+			&.wide {
+				img {
+					opacity: 1;
+				}
+			}
+		}
+		.phonebox {
+			margin-right: 0;
+		}
+		form {
+			&.orderDemo {
+				margin-right: 7vw;	
+			}
+		}
+		h4 {
+			&:after {
+				width: 12vw;
+			}
+		}
+	}
+	/*&.active {
 		article {
 			height: 100%;
 			opacity: 1;
@@ -326,8 +380,7 @@ section {
 				width: 12vw;
 			}
 		}
-		p {}
-	}
+	}*/
 }
 
 article {
@@ -365,13 +418,15 @@ article {
 			width: 32%;
 			height: 100%;
 			float: left;
-			padding: 4vh;
+			padding: 4vh 4vw;
 			background-color: #fff;
+			box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+			border: solid 1px #e6e6e6;
 			border-radius: 6px;
 			margin-top: 7vh;
 			display: flex;
-	    justify-content: flex-end;
-	    align-content: flex-end;
+	    justify-content: center;
+	    align-content: center;
 	    flex-direction: column;
 	    position: relative;
 	    figure {
@@ -380,8 +435,13 @@ article {
 	    	text-align: center;
   	    margin-top: 3vh;
     		max-height: 320px;
+    		display: flex;
+		    justify-content: center;
+		    align-content: center;
+		    align-items: center;
 	    	img {
-	    		@include img(585px);
+	    		@include img();
+	    		max-width: 585px;
 	    	}
 	    }
 			&:nth-child(2) {
@@ -391,7 +451,8 @@ article {
 		}
 		h6 {
 			font-family: AvenirNext;
-			font-size: 2vw;
+			//font-size: 2vw;
+			font-size: 28px;
 			font-weight: bold;
 			color: #4a4a4a;
 			padding-bottom: 4vh;
@@ -404,7 +465,8 @@ article {
 				position: absolute;
 				left: 0;
 				bottom: 0;
-				background-color: #0b7fe5;
+				//background-color: #0b7fe5;
+				background-color: rgba(27, 44, 66, 0.15);
 			}
 		}
 		p {
@@ -480,6 +542,7 @@ article {
 			height: 48vh;
 			margin-top: 10vh;
 			overflow: hidden;
+			 box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
 			ul {
 				width: 100%;
 				height: 100%;
@@ -535,24 +598,26 @@ article {
 	}
 	p {
 		font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.4vw;
+    //font-size: 1.4vw;
+    font-size: 20px;
     margin-top: 4vh;
     line-height: 3vh;
 		display: none;
 	}
 	.order {
     display: block;
-    height: 5.2vh;
-    width: 13.5vw;
+    //height: 5.2vh;width: 13.5vw;padding-left: 4vw;line-height: 5.2vh;
+    width: 190px;
+    height: 52px;
     border: 1px solid #fff;
     border-radius: 6px;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5vw;
-    line-height: 5.2vh;
+    font-size: 20px;
+    line-height: 52px;
     font-weight: 600;
-    padding-left: 4vw;
-    background: url('../img/Play button.svg') no-repeat 10px 50%/30px 30px;
+    padding-left: 58px;
+    background: url('../img/Play_button.svg') no-repeat 10px 50%/30px 30px;
     position: absolute;
     left: 10vw;
     bottom: 15vh;
@@ -564,10 +629,11 @@ article {
 		left: 10vw;
 		color: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1.5vw;
+		//font-size: 1.5vw;
+		font-size: 20px;
 		font-weight: 600;
 		padding-right: 2vw;
-		background: url('../img/Scroll down.svg') no-repeat 100% 50% / 15px 15px;
+		background: url('../img/Scroll_down.svg') no-repeat 100% 50% / 13px 15px;
 	}
 	.indication {
 		position: absolute;
@@ -613,6 +679,12 @@ figure {
 		margin-left: -45%;
 		width: 45%;
 	}
+	&.wide {
+		img {
+			transition: opacity 2s;
+			opacity: 0;
+		}
+	}
 	img {
 		@include img();
 		max-width: 800px;
@@ -630,10 +702,12 @@ figure {
 	justify-content: center;
 	align-items: center;
 	> div {
-		background: url('../img/iphone .png') no-repeat 50%;
+		background: url('../img/iphone@3x.png') no-repeat 50% / contain;
 		overflow: hidden;
 		width: 322px;
 		height: 640px;
+		box-shadow: -40px 0 30px 0 rgba(0,0,0, 0.36);
+		border-radius: 4vw 3vw 3vw 3vw;
 		&.animated {
 			padding: 13px 20px 20px;	
 		}
@@ -645,7 +719,7 @@ figure {
 form {
 	float: right;
 	background-color: #fff;
-	border-radius: 6px;
+	border-radius: 8px;
 	height: 80vh;
 	margin-top: 10vh;
 	margin-bottom: 10vh;
@@ -655,16 +729,18 @@ form {
 		width: 40%;
 		margin-right: -40%;
 		transition: margin 2s;
+		box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
 	}
 	h4 {
 		font-family: 'Montserrat', sans-serif;
-		font-size: 6.4vh;
+		font-size: 6vh;
 		font-weight: 700;
   	color: #0b7fe5;
 	}
 	p {
 		font-family: 'Source Sans Pro', sans-serif;
-  	font-size: 1.5vw;
+  	//font-size: 1.5vw;
+  	font-size: 20px;
   	color: #1b2c42;
   	margin-top: 3vh;
 	}
@@ -679,55 +755,134 @@ form {
   	color: #1b2c42;
   	margin-top: 3vh;
   	width: 100%;
+  	&:focus {
+  		border-bottom-color: #0b7fe5;
+  	}
 	}
 	textarea {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 1.3vw;
-  	color: #1b2c42;
+  	color: #000;
   	opacity: 0.4;
   	margin-top: 3vh;
 		border: 1px solid;
 		border-color: transparent transparent #bebebe;
 		padding: 1vh 1vw;
 		height: 10vh;
-		width: 100%;
+		width: 99%;
 		resize: none;
-		overflow: auto;
+		overflow: hidden;
+		&:focus {
+  		border-bottom-color: #0b7fe5;
+  		color: #000;
+  	}
 	}
 	input[type=submit] {
 		margin-top: 5vh;
-    width: 16vw;
-    height: 5.1vh;
+    //width: 16vw;height: 5.1vh;font-size: 1.7vw;
+    width: 243px;
+    height: 52px;
 	  border-radius: 10px;
 	  border: solid 1px #0b7fe5;
 	  text-align: center;
 	  font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1.7vw;
+		font-size: 20px;
   	font-weight: 600;
   	color: #0b7fe5;
   	cursor: pointer;
   	background: none;
+  	position: relative;
+    left: 50%;
+    margin-left: -120px;
+  	//margin-left: -40px;transform: translateX(50%);
 	}
 }
+/*
+.fullpage-wrapper {
+	width: 100%!important;
+	transform: none!important;
+	.fp-section {
+		width: 100%!important;
+		position: absolute;
+		left: 0;
+		top: 0;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 0;
+		transition: all .7s ease-in-out;
+		&.active {
+			visibility: visible;
+			opacity: 1;
+			z-index: 1;
+		}
+	}
+}
+*/
+		
 
 /* footer */
 footer {
 	float: left;
+	position: relative;
+	.back-to-top {
+	//padding-right: 3vw;
+		position: absolute;
+		//right: 76px;
+		right: 7vw;
+		bottom: 32px;
+		width: 32px;
+		line-height: 32px;
+		background: url('../img/Up_button.svg') no-repeat 100% 50% / 32px 32px; 
+    display: inline-block;
+    text-indent: -9999px;
+	}
 	>div {
 		height: auto;
 		&.top-line {
-			min-height: 26vh;
+			min-height: 28.6vh;
 			background-color: #1b2c42;
-			padding-top: 6vh;
+			padding: 6vh 7vw;
 			height: auto;
-			div {
-				width: 20%;
+			.left-side {
+				width: calc(100% - 130px);
 				float: left;
+				div {
+					width: 25%;
+					float: left;
+				}
+			}
+			.right-side {
+				width: 130px;
+				float: left;
+			}
+			div {
+				//width: 20%;float: left;
 				color: #fff;
+				&.small-font {
+					color: #fff;
+					font-family: 'Source Sans Pro', sans-serif;
+	  			//font-size: 1.2vw;
+			    font-size: 12px;
+			    width: 100%;
+	  			a {
+	  				color: #fff;
+						font-family: 'Source Sans Pro', sans-serif;
+		  			//font-size: 1.2vw;
+			    	font-size: 12px;
+	  			}
+	  			span {
+	  				color: #fff;
+						font-family: 'Source Sans Pro', sans-serif;
+		  			//font-size: 1.2vw;
+			    	font-size: 12px;
+	  				margin: 0 0.5vw;
+	  			}
+				}
 				h2 {
-					background: url('../img/Kandio Logo header.svg') no-repeat 0 0/100% 100%;
+					background: url('../img/Kandio_Logo_header.svg') no-repeat 0 0/100% 100%;
 			    width: 10vw;
 			    height: 3vh;
+			    margin-bottom: 2vh;
 					a {
 						line-height: 0;
 						font-size: 0;
@@ -736,7 +891,8 @@ footer {
 				}
 				h4 {
 				  font-family: 'Montserrat', sans-serif;
-				  font-size: 1.2vw;
+				  //font-size: 1.2vw;
+				  font-size: 16px;
 				  font-weight: bold;
 				  color: #999;
 				  line-height: 2vh;
@@ -764,25 +920,29 @@ footer {
 				}
 				p {
 					font-family: 'Source Sans Pro', sans-serif;
-			    font-size: 1.3vw;
+			    //font-size: 1.3vw;
+			    font-size: 18px;
     			width: 50%;
     			line-height: 2.7vh;
 				}
 				a {
 					font-family: 'Source Sans Pro', sans-serif;
-  				font-size: 1.3vw;
+  				//font-size: 1.3vw;
+			    font-size: 18px;
     			width: 50%;
     			line-height: 2.7vh;
 					color: #fff;
 					clear: both;
 				}
 				ul {
+					display: inline-block;
 					li {
 						float: left;
 						width: 36px;
 						height: 36px;
 						&+li {
-							margin-left: 1vw;
+							//margin-left: 1vw;
+							margin-left: 11px;
 						}
 						a {
 							display: block;
@@ -798,47 +958,20 @@ footer {
 				}
 				span {
 					font-family: 'Source Sans Pro', sans-serif;
-  				font-size: 1.3vw;
+  				//font-size: 1.3vw;
+			    font-size: 18px;
     			width: 50%;
     			line-height: 2.7vh;
 					line-height: 1;
 				}
 				&:first-child {
-					padding-left: 3vw;
+					//padding-left: 3vw;
+				}
+				&:last-child {
+					//width: 12%;
 				}
 			}
 		}
-		&.low-line {
-			min-height: 6vh;
-			height: auto;
-			background-color: #121f2f;
-			display: flex;
-			align-content: center;
-			align-items: center;
-			justify-content: space-between;
-			padding: 0 2vw;
-			div {
-				color: #fff;
-				font-family: 'Source Sans Pro', sans-serif;
-  			font-size: 1.2vw;
-  			a {
-  				color: #fff;
-					font-family: 'Source Sans Pro', sans-serif;
-	  			font-size: 1.2vw;
-  			}
-  			span {
-  				color: #fff;
-					font-family: 'Source Sans Pro', sans-serif;
-	  			font-size: 1.2vw;
-  				margin: 0 0.5vw;
-  			}
-  			.back-to-top {
-  				padding-right: 3vw;
-  				line-height: 32px;
-  				background: url('../img/Up button.svg') no-repeat 100% 50% / 32px 32px; 
-			    display: inline-block;
-  			}
-			}
-		}	
+		//&.low-line {min-height: 6vh;height: auto;background-color: #121f2f;display: flex;align-content: center;align-items: center;justify-content: space-between;padding: 0 2vw;}	
 	}
 }
