@@ -119,10 +119,26 @@ $('.link-board a').click(function(){
 	$('.link-board li').removeClass('active');
 	$('.link-visual li').removeClass('active');
 
-	$(this).parent('li').addClass('active');
+	$(this).parent('li').addClass('active').siblings('li').children('.line').css('width','0px');
 	$("#"+tab_id).addClass('active');
 
 	return false;
+});
+$('.link-board li').hover(function(event){
+	if ($(this).hasClass('active')) {
+		event.preventDefault();
+	}
+	else {
+		$(this).siblings('li.active').children('.line').css('width','60px');
+		$(this).children('.line').css('width','120px');
+	}
+}, function(event){
+	if ($(this).hasClass('active')) {
+		event.preventDefault();
+	}
+	else {
+		$(this).siblings('li.active').children('.line').css('width','120px');
+	}
 });
 /* end social block */
 
