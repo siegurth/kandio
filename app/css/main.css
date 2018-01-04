@@ -1035,7 +1035,7 @@ article {
         article.wide .link-board li:hover a {
           opacity: 1; }
         article.wide .link-board li:hover .line {
-          width: 120px; }
+          width: 120px !important; }
         article.wide .link-board li .line {
           display: block;
           width: 0;

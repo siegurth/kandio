@@ -124,21 +124,14 @@ $('.link-board a').click(function(){
 
 	return false;
 });
-$('.link-board li').hover(function(event){
-	if ($(this).hasClass('active')) {
-		event.preventDefault();
-	}
-	else {
+$('.link-board li').hover(
+	function(event){
 		$(this).siblings('li.active').children('.line').css('width','60px');
-		$(this).children('.line').css('width','120px');
-	}
-}, function(event){
-	if ($(this).hasClass('active')) {
-		event.preventDefault();
-	}
-	else {
+	}, function(event){
 		$(this).siblings('li.active').children('.line').css('width','120px');
-	}
+		if ($(this).hasClass('active')) {
+			$(this).children('.line').css('width','120px');
+		}
 });
 /* end social block */
 
