@@ -157,7 +157,8 @@ header {
 	nav {
 		a {
 			font-family: 'Source Sans Pro', sans-serif;
-		  font-size: 1.8vw;
+		  //font-size: 1.8vw;
+		  font-size: 18px;
 		  font-weight: 600;
 		  color: #fff;
 		}
@@ -167,6 +168,7 @@ header {
 			align-content: center;
 			align-items: center;
 			height: 3.4vh;
+			width: 40vw;
 			li {
 				margin-right: 2vw;
 			}
