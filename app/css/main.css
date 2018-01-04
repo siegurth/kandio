@@ -833,7 +833,8 @@ section {
     background-image: url("../img/Oval_main_screen.svg");
     -webkit-background-size: cover;
             background-size: cover;
-    display: none; }
+    display: none;
+    opacity: .5; }
   section .circle-2 {
     position: absolute;
     z-index: 1;
