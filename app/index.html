@@ -6,10 +6,13 @@
 	<title>Kandio</title>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="libs/fullpage/scrolloverflow.min.js"></script>
+	<script src="libs/fullpage/jquery.fullPage.js"></script>
 	<script src="js/main.js"></script>
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700">
+	<link rel="stylesheet" href="libs/fullpage/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -51,21 +54,22 @@
 			</ul>
 			<a href="#" class="order">Book a Demo</a>
 		</div>
-		<header>
-			<h1 class="logo"><a href="#">kandio</a></h1>
-			<nav>
-				<a href="#" class="sandwich-menu"><!--span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span--></a>
-				<ul>
-					<li><a href="#">How it works</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Karri&auml;r</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-			<a href="#" class="login">login</a>
-		</header>
-		<main id="">
-			<section class="scrollable main-view s1">
+		
+		<main id="fullpage">
+			<section id="page1" class="section main-view s1">
+				<header>
+					<h1 class="logo"><a href="#">kandio</a></h1>
+					<nav>
+						<a href="#" class="sandwich-menu"></a>
+						<ul>
+							<li><a href="#">How it works</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Karri&auml;r</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+					<a href="#" class="login">login</a>
+				</header>
 				<div class="circle">&nbsp;</div>
 				<article>
 					<h2>Find talents</h2>
@@ -75,7 +79,7 @@
 				</article>
 				<figure class="wide"><img src="img/Woman_floater@2x.png" alt="img"></figure>
 			</section>
-			<section class="scrollable s2">
+			<section id="page2" class="section s2">
 				<article class="top-space">
 					<h4>Nå passiva kandidater</h4>
 					<p>Gå utanför de traditionella kanalerna och hitta kandidater på medier som de faktiskt använder, bade passiva och aktiva.</p>
@@ -88,7 +92,7 @@
 				</article>
 				<figure class="middle-image wide"><img src="img/passive_candidate.png" alt="img"></figure>
 			</section>
-			<section class="scrollable s3">
+			<section id="page3" class="section s3">
 				<div class="circle-3">&nbsp;</div>
 				<article class="top-space">
 					<h4>Målstyrning</h4>
@@ -102,7 +106,7 @@
 				</article>
 				<figure class="middle-image wide"><img src="img/targeted-mails@3x.png" alt="img"></figure>
 			</section>
-			<section class="scrollable s4">
+			<section id="page4" class="section s4">
 				<div class="circle-2">&nbsp;</div>
 				<article class="top-space">
 					<h4>Automatisk optimering</h4>
@@ -121,7 +125,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="scrollable s5">
+			<section id="page5" class="section s5">
 				<article class="wide mobile-order">
 					<h3 class="">How it works?</h3>
 					<div class="row">
@@ -153,7 +157,7 @@
 					<a href="#" class="order">Book a Demo </a>
 				</article>
 			</section>
-			<section class="scrollable s6">
+			<section id="page6" class="section s6">
 				<article class="wide padding">
 					<h3>Amazing ads</h3>
 						<ul class="link-board">
@@ -173,61 +177,63 @@
 					<a href="#" class="order">Book a Demo </a>
 				</article>
 			</section>
-			<section class="scrollable s7">
-				<figure class="left-aligned middle-image medium wide"><img src="img/man_at_table@2x.png" alt="img"></figure>
-				<form action="#" class="orderDemo">
-					<h4>Order Demo</h4>
-					<p>All your questions can be solved in a minute. Write us and see all Kandio features.</p>
-					<input type="text" placeholder="Type your name" required>
-					<input type="text" placeholder="Phone number" required>
-					<input type="text" placeholder="E-mail" required>
-					<textarea name="message" placeholder="Your message (if any)"></textarea>
-					<input type="submit" value="Submit">
-				</form>
+			<section id="page7" class="section bottom-page s7">
+				<div class="fullSide">
+					<figure class="left-aligned middle-image medium wide"><img src="img/man_at_table@2x.png" alt="img"></figure>
+					<form action="#" class="orderDemo">
+						<h4>Order Demo</h4>
+						<p>All your questions can be solved in a minute. Write us and see all Kandio features.</p>
+						<input type="text" placeholder="Type your name" required>
+						<input type="text" placeholder="Phone number" required>
+						<input type="text" placeholder="E-mail" required>
+						<textarea name="message" placeholder="Your message (if any)"></textarea>
+						<input type="submit" value="Submit">
+					</form>	
+				</div>
+				<footer>
+					<div class="top-line">
+						<div class="left-side">
+							<div>
+								<h2><a href="#">kandio</a></h2>
+								<div class="small-font">&copy; KANDIO - 2017. All rights reserved.</div>
+								<div class="small-font">
+									<a href="#">Privacy Policy</a>
+									<span>|</span>
+									<a href="#">Terms of use</a>
+								</div>		
+							</div>
+							<div>
+								<h4>CONTACT</h4>
+								<p>Kungsgatan 26, 11135 Stockholm, Sweden</p>
+							</div>
+							<div>
+								<h4>COMPANY</h4>
+								<a href="mailto:info@kand.io">info@kand.io</a>
+								<br/><br/>
+								<a href="#">+46 (0) 111 111 11</a>
+							</div>
+							<div>
+								<h4>INFORMATION</h4>
+								<a href="#">Hur fungerar det?</a>
+								<br/>
+								<a href="#">FAQ</a>
+								<br/>
+								<a href="#">Kari&auml;r</a>
+							</div>
+						</div>
+						<div class="right-side">
+							<h4 class="marked">SOCIAL<sup>1</sup></h4>
+							<ul class="social">
+								<li><a href="http://facebook.com"><img src="img/Facebook_icon.svg" alt="facebook"></a></li>
+								<li><a href="http://twitter.com"><img src="img/Linked_in_icon.svg" alt="twitter"></a></li>
+								<li><a href="http://linkedin.com"><img src="img/Twitter_icon.svg" alt="linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+					<a class="back-to-top" href="#">Go up</a>
+				</footer>
 			</section>
 		</main>
-		<footer>
-			<div class="top-line">
-				<div class="left-side">
-					<div>
-						<h2><a href="#">kandio</a></h2>
-						<div class="small-font">&copy; KANDIO - 2017. All rights reserved.</div>
-						<div class="small-font">
-							<a href="#">Privacy Policy</a>
-							<span>|</span>
-							<a href="#">Terms of use</a>
-						</div>		
-					</div>
-					<div>
-						<h4>CONTACT</h4>
-						<p>Kungsgatan 26, 11135 Stockholm, Sweden</p>
-					</div>
-					<div>
-						<h4>COMPANY</h4>
-						<a href="mailto:info@kand.io">info@kand.io</a>
-						<br/><br/>
-						<a href="#">+46 (0) 111 111 11</a>
-					</div>
-					<div>
-						<h4>INFORMATION</h4>
-						<a href="#">Hur fungerar det?</a>
-						<br/>
-						<a href="#">FAQ</a>
-						<br/>
-						<a href="#">Kari&auml;r</a>
-					</div>
-				</div>
-				<div class="right-side">
-					<h4 class="marked">SOCIAL<sup>1</sup></h4>
-					<ul class="social">
-						<li><a href="http://facebook.com"><img src="img/Facebook_icon.svg" alt="facebook"></a></li>
-						<li><a href="http://twitter.com"><img src="img/Linked_in_icon.svg" alt="twitter"></a></li>
-						<li><a href="http://linkedin.com"><img src="img/Twitter_icon.svg" alt="linkedin"></a></li>
-					</ul>
-				</div>
-			</div>
-			<a class="back-to-top" href="#">Go up</a>
-		</footer>
 	</div>
 </body>
 </html>
