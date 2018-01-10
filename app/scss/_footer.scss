@@ -1,0 +1,138 @@
+/* footer */
+footer {
+	float: left;
+	position: relative;
+	height: 28.6vh;
+	min-height: 28.6vh;
+	.back-to-top {
+		position: absolute;
+		right: 7vw;
+		bottom: 32px;
+		width: 32px;
+		line-height: 32px;
+		background: url('../img/Up_button.svg') no-repeat 100% 50% / 32px 32px; 
+    display: inline-block;
+    text-indent: -9999px;
+	}
+	>div {
+		min-height: 28.6vh;
+		height: auto;
+		&.top-line {
+			background-color: #1b2c42;
+			padding: 6vh 7vw;
+			height: auto;
+			.left-side {
+				width: calc(100% - 130px);
+				float: left;
+				div {
+					width: 25%;
+					float: left;
+				}
+			}
+			.right-side {
+				width: 130px;
+				float: left;
+			}
+			div {
+				color: #fff;
+				&.small-font {
+					color: #fff;
+					font-family: 'Source Sans Pro', sans-serif;
+			    font-size: 12px;
+			    width: 100%;
+	  			a {
+	  				color: #fff;
+						font-family: 'Source Sans Pro', sans-serif;
+			    	font-size: 12px;
+	  			}
+	  			span {
+	  				color: #fff;
+						font-family: 'Source Sans Pro', sans-serif;
+			    	font-size: 12px;
+	  				margin: 0 0.5vw;
+	  			}
+				}
+				h2 {
+					background: url('../img/Kandio_Logo_header.svg') no-repeat 0 0/100% 100%;
+			    width: 10vw;
+			    height: 3vh;
+			    margin-bottom: 2vh;
+					a {
+						line-height: 0;
+						font-size: 0;
+						color: transparent;
+					}
+				}
+				h4 {
+				  font-family: 'Montserrat', sans-serif;
+				  font-size: 16px;
+				  font-weight: bold;
+				  color: #999;
+				  line-height: 2vh;
+				  text-transform: uppercase;
+				  padding-right: 1vw;
+				  padding-bottom: 2vh;
+				  position: relative;
+				  &.marked {
+				  	sup {
+							opacity: 1;
+							padding: 0 5px;
+							background-color: #f05454;
+							font-family: 'Source Sans Pro', sans-serif;
+							color: #fff;
+	  					font-size: 12px;
+	  					font-weight: bold;
+	  					line-height: 16px;
+	  					border-radius: 50%;
+	  					display: inline-block;
+	  					width: 16px;
+	  					height: 16px;
+					  }	
+				  }
+				}
+				p {
+					font-family: 'Source Sans Pro', sans-serif;
+			    font-size: 18px;
+    			width: 50%;
+    			line-height: 1.5;
+				}
+				a {
+					font-family: 'Source Sans Pro', sans-serif;
+			    font-size: 18px;
+    			width: 50%;
+    			line-height: 1.5;
+					color: #fff;
+					clear: both;
+				}
+				ul {
+					display: inline-block;
+					li {
+						float: left;
+						width: 36px;
+						height: 36px;
+						&+li {
+							margin-left: 11px;
+						}
+						a {
+							display: block;
+							width: 100%;
+							height: 100%;
+							line-height: 0;
+							font-size: 0;
+						}
+						img {
+							@include img();
+						}
+					}
+				}
+				span {
+					font-family: 'Source Sans Pro', sans-serif;
+			    font-size: 18px;
+    			width: 50%;
+    			line-height: 2.7vh;
+					line-height: 1;
+				}
+			}
+		}
+	}
+}

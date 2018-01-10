@@ -1,0 +1,44 @@
+@mixin img($width:100%, $height:auto, $display:inline-block, $border:none) {
+	width: $width;
+	height: $height;
+	display: $display;
+	border: $border;
+}
+
+figure {
+	float: right;
+	height: 100%;
+	width: 60%;
+	margin-right: -60%;
+	transition: margin 2s;
+	position: relative;
+	z-index: 10;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	overflow: hidden;
+	&.middle-image {
+		justify-content: center;
+		align-items: center;
+		img {
+			max-width: 80% !important;
+		}
+	}
+	&.left-aligned {
+		float: left;
+	}
+	&.medium {
+		margin-left: -45%;
+		width: 45%;
+	}
+	&.wide {
+		img {
+			transition: opacity 2.5s;
+			opacity: 0;
+			max-width: 90%;
+		}
+	}
+	img {
+		@include img();
+	}
+}
