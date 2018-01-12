@@ -98,7 +98,7 @@ $('.link-board li').hover(
 	(new Image()).src = "../img/Iphone-animation.gif"; 
   $(".phoneHolder").click(function () {
   	$(this).addClass('animated');
-  	$(this).children("img").attr("src", "img/Iphone-animation.gif");
+  	$(".phoneHolder > img").attr("src", "img/Iphone-animation.gif");
 
   });
 /* end gif block*/

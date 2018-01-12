@@ -1477,8 +1477,12 @@ figure {
       position: absolute;
       z-index: 800;
       top: 0;
-      left: 0;
-      background: url("../img/iphone_box.png") no-repeat 50%; }
+      left: 0; }
+      .phonebox > div .phonecover img {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        border: none; }
     .phonebox > div img {
       width: 100%;
       height: auto;
@@ -1694,10 +1698,12 @@ footer {
 
 @media screen and (max-width: 1100px) and (min-width: 769px) {
   article h2 {
-    font-size: 80px !important; }
+    font-size: 80px; }
   article h3 {
     font-size: 5vh;
     text-align: center; }
+  article.flex {
+    width: 45%; }
   article.top-space {
     padding-top: 20vh; }
   article.wide.padding {
@@ -1742,5 +1748,9 @@ footer {
     margin-left: 2.5%;
     margin-top: 0;
     height: auto; }
+  figure.wide {
+    width: 55%; }
   form.orderDemo {
-    width: 35%; } }
+    width: 35%; }
+  .phonebox {
+    width: 55%; } }

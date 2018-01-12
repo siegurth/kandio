@@ -845,7 +845,9 @@ figure {
 			z-index: 800;
 			top: 0;
 			left: 0;
-			background: url('../img/iphone_box.png') no-repeat 50%;
+			img {
+				@include img();
+			}
 		}
 		img {
 			@include img();
@@ -1089,11 +1091,14 @@ footer {
 @media screen and (max-width: 1100px) and (min-width: 769px) {
 	article {
 		h2 {
-			font-size: 80px !important;
+			font-size: 80px;
 		}
 		h3 {
 			font-size: 5vh;
 			text-align: center;
+		}
+		&.flex {
+			width: 45%;
 		}
 		&.top-space {
     	padding-top: 20vh;
@@ -1148,9 +1153,17 @@ footer {
 			}
 		}
 	}
+	figure {
+		&.wide {
+			width: 55%;
+		}
+	}
 	form {
 		&.orderDemo {
 			width: 35%;
 		}
+	}
+	.phonebox {
+		width: 55%;
 	}
 }
