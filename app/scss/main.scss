@@ -228,18 +228,21 @@ header {
 		font-size: 18px;
 		font-weight: 600;
 		text-align: center;
+		text-transform: capitalize;
 		line-height: 42px;
 		color: #fff;
 		border: 1px solid #fff;
-		border-radius: 8px;
+		border-radius: 6px;
 		display: block;
 		width: 117px;
 		height: 42px;
+		background: url("../img/login-white.svg") no-repeat 7px 50%/20px 20px;
 	}
 	nav {
 		a {
 			font-family: 'Source Sans Pro', sans-serif;
 		  font-size: 18px;
+		  line-height: 1.2;
 		  font-weight: 600;
 		  color: #fff;
 		}
@@ -270,62 +273,66 @@ section {
   &.main-view {
   	padding-top: 0;
   	article {
-  		padding-top: 25vh;
+  		padding-top: 140px;
+  		display: flex;
+  		align-content: center;
+  		align-items: left;
+  		justify-content: center;
+  		flex-direction: column;
   	}
   }
-  /*&:after {
-  	opacity: 0;
-  	transition: opacity .7s;
-  	content: '';
+  .bg {
   	display: block;
   	position: absolute;
-  	width: 100%;
-  	height: 100%;
-  	z-index: 1;
   	top: 0;
   	left: 0;
-  }*/
+  	z-index: 1;
+  	opacity:0;
+  	transition: opacity 1s;
+  	width: 100%;
+  	height: 100%;
+  }
   &.s1 {
-  	background-image: radial-gradient(circle at 100% 50%, #38a9e1, #0869c2);
-  	/*&:after {
+  	//background-image: radial-gradient(circle at 100% 50%, #38a9e1, #0869c2);
+  	.bg {
 			background-image: radial-gradient(circle at 100% 50%, #38a9e1, #0869c2);
-  	}*/
+  	}
   }
 	&.s2 {
-		background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
-		/*&:after {
+		//background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
+		.bg {
   		background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
-  	}*/
+  	}
 	}
 	&.s3 {
-		background-image: radial-gradient(circle at 100% 50%, #ffc100, #f98718);
-		/*&:after {
+		//background-image: radial-gradient(circle at 100% 50%, #ffc100, #f98718);
+		.bg {
   		background-image: radial-gradient(circle at 100% 50%, #ffc100, #f98718);
-  	}*/
+  	}
   }
 	&.s4 {
-		background-image: radial-gradient(circle at 102% 52%, #574ae2, #3d3690);
-		/*&:after {
+		//background-image: radial-gradient(circle at 102% 52%, #574ae2, #3d3690);
+		.bg {
   		background-image: radial-gradient(circle at 102% 52%, #574ae2, #3d3690);
-  	}*/
+  	}
   }
 	&.s5 {
-		background-image: radial-gradient(circle at 100% 47%, #75e36f, #2f9917);
-		/*&:after {
+		//background-image: radial-gradient(circle at 100% 47%, #75e36f, #2f9917);
+		.bg {
   		background-image: radial-gradient(circle at 100% 47%, #75e36f, #2f9917);
-  	}*/
+  	}
   }
 	&.s6 {
-		background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
-		/*&:after {
+		//background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
+		.bg {
   		background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
-  	}*/
+  	}
   }
 	&.s7 {
-		background-image: radial-gradient(circle at 100% 50%, #74bcf5, #0b7fe5);
-		/*&:after {
+		//background-image: radial-gradient(circle at 100% 50%, #74bcf5, #0b7fe5);
+		.bg {
   		background-image: radial-gradient(circle at 100% 50%, #74bcf5, #0b7fe5);
-  	}*/
+  	}
   }
 	.circle {
 		position: absolute;
@@ -468,17 +475,19 @@ article {
 		p {
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 18px;
+			line-height: 1.2;
 			color: #1b2c42;
 			margin-top: 3vh;
 			&.pageStage {
 				font-family: 'Montserrat', sans-serif;
 	  		font-size: 14px;
 	  		font-weight: 700;
+	  		line-height: 1.2;
 				color: #0b7fe5;
 				margin: 0; 
 				position: absolute;
 				top: 4vh;
-				left: 4vw;
+				left: 2vw;
 			}
 		}
 		.link-board {
@@ -560,7 +569,8 @@ article {
 	}
 	h2 {
 		font-family: 'Montserrat', sans-serif;
-	  font-size: 10vh;
+	  //font-size: 10vh;
+	  font-size: 95px;
 	  font-weight: bold;
 	  line-height: 1.05;
 	}
@@ -568,11 +578,13 @@ article {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 5vh;
 		font-weight: 700;
+		line-height: 1.2;
 	}
 	h4 {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 4.5vh;
 		font-weight: bold;
+		line-height: 1.2;
 		position: relative;
 		padding-bottom: 4vh;
 		.bottom-line {
@@ -590,13 +602,15 @@ article {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 3vh;
 		font-weight: 400;
+		line-height: 1.2;
 		margin-top: 2vh;
+		position: relative;
 	}
 	p {
 		font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     margin-top: 4vh;
-    line-height: 3vh;
+    line-height: 1.2;
 		opacity: 0;
 	}
 	.order {
@@ -616,7 +630,8 @@ article {
     left: 10vw;
     bottom: 15vh;
     &.mid {
-    	bottom: 20vh;
+    	bottom: -10vh;
+    	left: 0;
     }
 	}
 	.scroll-down {
@@ -681,6 +696,7 @@ figure {
 		width: 45%;
 	}
 	&.wide {
+		padding-right: 20px;
 		img {
 			transition: opacity 2.5s;
 			opacity: 0;
@@ -741,6 +757,8 @@ form {
 	height: 80vh;
 	margin-right: 5vw;
 	padding: 5vh 5vw;
+	position: relative;
+	z-index: 15;
 	&.orderDemo {
 		width: 35%;
 		margin-right: -40%;
@@ -822,6 +840,7 @@ form {
 footer {
 	float: left;
 	position: relative;
+	z-index: 25;
 	height: 28.6vh;
 	min-height: 28.6vh;
 	.back-to-top {
