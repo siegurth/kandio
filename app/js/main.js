@@ -112,18 +112,21 @@ $('.link-board li').hover(
 			console.log(link+' | '+index);
 			if (index == 1) {
 				$('.circle').addClass('shown');
+				$('#page1 figure').addClass('shown');
 			}
 			if (index == 2) {
-				
+				$('#page2 figure').addClass('shown');	
 				$('#page2 .bottom-line').animate({'width':'150px'},300);
 				
 			}
 			if (index == 3) {
+				$('#page3 figure').addClass('shown');
 				$('#page3 .bottom-line').animate({'width':'150px'},200);
 				$('.circle-3').addClass('shown');
 			}
 			if (index == 4) {
 				$('.circle-2').addClass('shown');
+				$('.phonebox').addClass('shown');
 				setTimeout(function(){
 			       $('.phonebox>div').addClass('shadow');
 				}, 1500);
@@ -134,6 +137,7 @@ $('.link-board li').hover(
 			if (index == 6) {
 			}
 			if (index == 7) {
+				$('#page7 figure, #page7 form').addClass('shown');
 			}
 		}
 	});

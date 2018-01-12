@@ -299,7 +299,7 @@ section {
       width: 90%;
       height: auto;
       margin-right: 5% !important;
-      margin-top: 5vh; }
+      margin-top: 10vh; }
       .wrapper .phonebox > div {
         background: url("../img/iphone_.png") no-repeat 50% 0/cover;
         overflow: hidden;
@@ -1037,38 +1037,35 @@ section {
       -webkit-transition: opacity 1500ms linear, visibility 0s linear 500ms;
       -o-transition: opacity 1500ms linear, visibility 0s linear 500ms;
       transition: opacity 1500ms linear, visibility 0s linear 500ms; }
-  section.active:after {
-    opacity: 1; }
-  section.active article h4 {
-    -webkit-animation: fontup 1.1s;
-            animation: fontup 1.1s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
-  section.active article p {
-    -webkit-animation: fontup 1.1s;
-            animation: fontup 1.1s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
-  section.active figure {
-    -webkit-animation: move 1.1s;
-            animation: move 1.1s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
-    section.active figure.left-aligned {
-      -webkit-animation: moveLeft 1.1s;
-              animation: moveLeft 1.1s;
+  section.active {
+    /*figure {
+			animation: move 1.1s;
+			animation-timing-function: linear;
+			&.left-aligned {
+				animation: moveLeft 1.1s;
+				animation-timing-function: linear;
+			}
+		}
+		.phonebox {
+			animation: move 1.2s;
+			animation-timing-function: linear;
+		}
+		.orderDemo {
+			animation: movepart 1.2s;
+			animation-timing-function: linear;	
+		}*/ }
+    section.active:after {
+      opacity: 1; }
+    section.active article h4 {
+      -webkit-animation: fontup 1.1s;
+              animation: fontup 1.1s;
       -webkit-animation-timing-function: linear;
               animation-timing-function: linear; }
-  section.active .phonebox {
-    -webkit-animation: move 1.2s;
-            animation: move 1.2s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
-  section.active .orderDemo {
-    -webkit-animation: movepart 1.2s;
-            animation: movepart 1.2s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
+    section.active article p {
+      -webkit-animation: fontup 1.1s;
+              animation: fontup 1.1s;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear; }
 
 /* article */
 article {
@@ -1288,7 +1285,7 @@ article {
             display: block; }
   article h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 95px;
+    font-size: 92px;
     font-weight: bold;
     line-height: 1.05; }
   article h3 {
@@ -1377,6 +1374,54 @@ article {
         background-color: #fff;
         -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
                 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); }
+
+#page1 figure {
+  margin-right: -60%;
+  -webkit-transition: margin 1.1s ease-in-out;
+  -o-transition: margin 1.1s ease-in-out;
+  transition: margin 1.1s ease-in-out; }
+  #page1 figure.shown {
+    margin-right: 0; }
+
+#page2 figure {
+  margin-right: -60%;
+  -webkit-transition: margin 1.1s ease-in-out;
+  -o-transition: margin 1.1s ease-in-out;
+  transition: margin 1.1s ease-in-out; }
+  #page2 figure.shown {
+    margin-right: 0; }
+
+#page3 figure {
+  margin-right: -60%;
+  -webkit-transition: margin 1.1s ease-in-out;
+  -o-transition: margin 1.1s ease-in-out;
+  transition: margin 1.1s ease-in-out; }
+  #page3 figure.shown {
+    margin-right: 0; }
+
+#page4 .phonebox {
+  margin-right: -60%;
+  -webkit-transition: margin 1.1s ease-in-out;
+  -o-transition: margin 1.1s ease-in-out;
+  transition: margin 1.1s ease-in-out; }
+  #page4 .phonebox.shown {
+    margin-right: 0; }
+
+#page7 figure {
+  margin-left: -60%;
+  -webkit-transition: margin 1.1s ease-in-out;
+  -o-transition: margin 1.1s ease-in-out;
+  transition: margin 1.1s ease-in-out; }
+  #page7 figure.shown {
+    margin-left: 0; }
+
+#page7 form {
+  margin-right: -60%;
+  -webkit-transition: margin 1.1s ease-in-out;
+  -o-transition: margin 1.1s ease-in-out;
+  transition: margin 1.1s ease-in-out; }
+  #page7 form.shown {
+    margin-right: 10vw; }
 
 /* figure */
 figure {
@@ -1698,7 +1743,7 @@ footer {
 
 @media screen and (max-width: 1100px) and (min-width: 769px) {
   article h2 {
-    font-size: 80px; }
+    font-size: 72px; }
   article h3 {
     font-size: 5vh;
     text-align: center; }
@@ -1750,6 +1795,8 @@ footer {
     height: auto; }
   figure.wide {
     width: 55%; }
+  figure.middle-image img {
+    margin-top: 15vh; }
   form.orderDemo {
     width: 35%; }
   .phonebox {
