@@ -13,6 +13,38 @@
 	0%, 100% {opacity: 1;} 
 	50% {opacity: 0;}
 }
+@keyframes move {
+	from {margin-right: -60%;}
+	to {margin-right: 0;}
+}
+@keyframes movepart {
+	from {margin-right: -60%;}
+	to {margin-right: 10vw;}
+}
+@keyframes moveLeft {
+	from {margin-left: -60%;}
+	to {margin-left: 0;}
+}
+
+@keyframes moveup {
+	from {height: 0;}
+	to {height: 100vh;}
+}
+
+@keyframes fontup {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes opacity {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes opacityhalf {
+	from {opacity: 0;}
+	to {opacity: .5;}
+}
 
 /* wrapper */
 .wrapper {
@@ -104,7 +136,6 @@
 	width: 100%;
 	height: 100vh;
 	background-color: #fff;
-	border: 1px solid #3399ff;
 	padding: 2vh 2vw;
 	.close {
 		background: url('../img/close_icon_blue.svg') no-repeat;
@@ -120,10 +151,11 @@
 	  position: relative;
 	  z-index: 99;
     margin-top: 1.5vh;
-    width: 30vw;
-  	height: 3vh;
-  	margin-left: 35vw;
+    width: 108px;
+  	height: 18px;
+  	margin-left: -54px;
   	display: block;
+  	left: 50%;
 	  a {
 	  	display: block;
 	  	background-image: url('../img/Kandio_logo_mobile_header.svg');
@@ -136,8 +168,8 @@
 	  }
 	}
 	.login {
-		width: 6vw;
-		height: 4vh;
+		width: 28px;
+		height: 28px;
 		padding: 0;
 		text-indent: -9999px;
 		background: url('../img/Login_icon.svg') no-repeat 50% 50% / 60% 60%;
@@ -154,11 +186,11 @@
 		li {
 			float: left;
 			width: 100%;
-			margin-top: 7vh;
+			margin-top: 3vh;
 			text-align: center;
 			a {
 				font-family: 'Source Sans Pro', sans-serif;
-				font-size: 5.5vw;
+				font-size: 24px;
 				font-weight: 600;
 				color: #1b2c42;
 			}
@@ -166,20 +198,21 @@
 	}
 	.order {
 		display: block;
-		height: 9vh;
-    width: 60vw;
+		height: 46px;
+    width: 229px;
 		border: 1px solid #3399ff;
 		border-radius: 6px;
 		color: #3399ff;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 6vw;
-    line-height: 9vh;
+		font-size: 18px;
+    line-height: 46px;
     font-weight: 600;
-    padding-left: 20vw;
-		background: url('../img/Play_button_blue.svg') no-repeat 10px 50% /8vw 8vh;
+    padding-left: 79px;
+		background: url('../img/Play_button_blue.svg') no-repeat 10px 50% /20px 20px;
 		position: absolute;
-    left: 20vw;
+    left: 50%;
     bottom: 10vh;
+    margin-left: -115px;
 	}
 }
 
@@ -279,6 +312,10 @@ section {
   		align-items: left;
   		justify-content: center;
   		flex-direction: column;
+  		opacity: 1;
+  		height: 100vh;
+  		animation: moveup 1.1s;
+  		animation-timing-function: linear;
   	}
   }
   .bg {
@@ -287,49 +324,49 @@ section {
   	top: 0;
   	left: 0;
   	z-index: 1;
-  	opacity:0;
+  	opacity:1;
   	transition: opacity 1s;
   	width: 100%;
   	height: 100%;
   }
   &.s1 {
-  	//background-image: radial-gradient(circle at 100% 50%, #38a9e1, #0869c2);
+  	background-image: radial-gradient(circle at 100% 50%, #38a9e1, #0869c2);
   	.bg {
 			background-image: radial-gradient(circle at 100% 50%, #38a9e1, #0869c2);
   	}
   }
 	&.s2 {
-		//background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
+		background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
 		.bg {
   		background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
   	}
 	}
 	&.s3 {
-		//background-image: radial-gradient(circle at 100% 50%, #ffc100, #f98718);
+		background-image: radial-gradient(circle at 100% 50%, #ffc100, #f98718);
 		.bg {
   		background-image: radial-gradient(circle at 100% 50%, #ffc100, #f98718);
   	}
   }
 	&.s4 {
-		//background-image: radial-gradient(circle at 102% 52%, #574ae2, #3d3690);
+		background-image: radial-gradient(circle at 102% 52%, #574ae2, #3d3690);
 		.bg {
   		background-image: radial-gradient(circle at 102% 52%, #574ae2, #3d3690);
   	}
   }
 	&.s5 {
-		//background-image: radial-gradient(circle at 100% 47%, #75e36f, #2f9917);
+		background-image: radial-gradient(circle at 100% 47%, #75e36f, #2f9917);
 		.bg {
   		background-image: radial-gradient(circle at 100% 47%, #75e36f, #2f9917);
   	}
   }
 	&.s6 {
-		//background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
+		background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
 		.bg {
   		background-image: radial-gradient(circle at 100% 50%, #0e5b9e, #1b2c42);
   	}
   }
 	&.s7 {
-		//background-image: radial-gradient(circle at 100% 50%, #74bcf5, #0b7fe5);
+		background-image: radial-gradient(circle at 100% 50%, #74bcf5, #0b7fe5);
 		.bg {
   		background-image: radial-gradient(circle at 100% 50%, #74bcf5, #0b7fe5);
   	}
@@ -345,8 +382,18 @@ section {
     background-repeat: no-repeat;
     background-image: url('../img/Oval_main_screen.svg');
     background-size: cover;
-    display: none;
-    opacity: .5;
+		opacity: 0;
+  	visibility: hidden;
+  	transition:
+    opacity 500ms linear,
+    visibility 0s linear 500ms;
+    &.shown {
+    	opacity: 1;
+  		visibility: visible;
+  		transition:
+		    opacity 1500ms linear,
+		    visibility 0s linear 500ms;
+		}
 	}
 	.circle-2 {
 		position: absolute;
@@ -359,7 +406,18 @@ section {
     background-repeat: no-repeat;
     background-image: url('../img/Oval_feature_3.svg');
     background-size: cover;
-    display: none;
+    opacity: 0;
+  	visibility: hidden;
+  	transition:
+    opacity 500ms linear,
+    visibility 0s linear 500ms;
+    &.shown {
+    	opacity: 1;
+  		visibility: visible;
+  		transition:
+		    opacity 1500ms linear,
+		    visibility 0s linear 500ms;
+		}
 	}
 	.circle-3 {
 		position: absolute;
@@ -372,16 +430,50 @@ section {
     background-repeat: no-repeat;
     background-image: url('../img/Ovals_mailstyrning.svg');
     background-size: cover;
-    display: none;
+    opacity: 0;
+  	visibility: hidden;
+  	transition:
+    opacity 500ms linear,
+    visibility 0s linear 500ms;
+    &.shown {
+    	opacity: 1;
+  		visibility: visible;
+  		transition:
+		    opacity 1500ms linear,
+		    visibility 0s linear 500ms;
+		}
 	}
 	&.active {
 		h4 {
 			.bottom-line {
-				width: 12vw;
 			}
 		}	
 		&:after {
 			opacity: 1;
+		}
+		article h4 {
+			animation: fontup 1.1s;
+			animation-timing-function: linear;
+		}
+		article p {
+			animation: fontup 1.1s;
+			animation-timing-function: linear;	
+		}
+		figure {
+			animation: move 1.1s;
+			animation-timing-function: linear;
+			&.left-aligned {
+				animation: moveLeft 1.1s;
+				animation-timing-function: linear;
+			}
+		}
+		.phonebox {
+			animation: move 1.2s;
+			animation-timing-function: linear;
+		}
+		.orderDemo {
+			animation: movepart 1.2s;
+			animation-timing-function: linear;	
 		}
 	}
 }
@@ -390,19 +482,28 @@ article {
 	position: relative;
 	padding-top: 20vh;
 	padding-left: 10vw;
-	height: 0;
-	opacity: 0;
-	transition: height, opacity 2s;
+	height: 100vh;
+	overflow: hidden;
+	&.flex {
+		display: flex;
+    align-content: center;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0;
+	}
+    
+	//transition: height, opacity 2s;
 	z-index: 20;
 	width: 40%;
 	float: left;
 	color: #fff;
 	&.top-space {
-		padding-top: 40vh;
+		//padding-top: 40vh;
 	}
 	&.wide {
 		width: 100%;
-		padding: 10vh 10vw 0; 
+		padding: 10vh 35px 0; 
 		&.padding {
 			padding-right: 10vw;
 			padding-left: 10vw;
@@ -590,7 +691,7 @@ article {
 		.bottom-line {
 			display: block;
 			width: 0px;
-			transition: width 2s;
+			transition: width 1.2s;
 			height: 4px;
 			background-color: #fff;
 			position: absolute;
@@ -611,7 +712,7 @@ article {
     font-size: 20px;
     margin-top: 4vh;
     line-height: 1.2;
-		opacity: 0;
+		opacity: 1;
 	}
 	.order {
     display: block;
@@ -673,8 +774,9 @@ figure {
 	float: right;
 	height: 100%;
 	width: 60%;
-	margin-right: -60%;
-	transition: margin 2s;
+	margin-right: 0;
+	//animation: move 1.2s;	animation-timing-function: linear;
+	//transition: margin 2s;
 	position: relative;
 	z-index: 10;
 	display: flex;
@@ -686,20 +788,22 @@ figure {
 		align-items: center;
 		img {
 			max-width: 80% !important;
+			opacity: 1;
 		}
 	}
 	&.left-aligned {
 		float: left;
+		margin: 0;
 	}
 	&.medium {
-		margin-left: -45%;
+		margin-left: 0;
 		width: 45%;
 	}
 	&.wide {
 		padding-right: 20px;
 		img {
 			transition: opacity 2.5s;
-			opacity: 0;
+			opacity: 1;
 			max-width: 90%;
 		}
 	}
@@ -711,9 +815,9 @@ figure {
 .phonebox {
 	float: right;
 	height: 100%;
-	margin-right: -60%;
+	margin-right: 0;
 	width: 60%;
-	transition: margin 2s;
+	//transition: margin 2s;
 	position: relative;
 	z-index: 10;
 	display: flex;
@@ -726,6 +830,8 @@ figure {
 		height: 640px;
 		border-radius: 49px;
 		position: relative;
+		box-shadow: none;
+		transition: box-shadow .3s;
 		&.animated {
 			padding: 13px 20px 20px;	
 		}
@@ -756,13 +862,15 @@ form {
 	border-radius: 8px;
 	height: 80vh;
 	margin-right: 5vw;
-	padding: 5vh 5vw;
+	padding: 3vh 3vw;
 	position: relative;
 	z-index: 15;
 	&.orderDemo {
-		width: 35%;
-		margin-right: -40%;
-		transition: margin 2s;
+		width: 25%;
+		min-height: 75vh;
+		margin-right: 10vw;
+		//transition: margin 2s;
+		overflow: hidden;
 		box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
 	}
 	h4 {
@@ -841,6 +949,7 @@ footer {
 	float: left;
 	position: relative;
 	z-index: 25;
+	margin-top: 4vh;
 	height: 28.6vh;
 	min-height: 28.6vh;
 	.back-to-top {
@@ -972,6 +1081,76 @@ footer {
 					line-height: 1;
 				}
 			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+	article {
+		h2 {
+			font-size: 80px !important;
+		}
+		h3 {
+			font-size: 5vh;
+			text-align: center;
+		}
+		&.top-space {
+    	padding-top: 20vh;
+		}
+		&.wide {
+			&.padding {
+				padding-top: 0;
+				padding-right: 3vw;
+				padding-left: 3vw;
+			}
+			.link-board {
+				width: 95%;
+				margin-left: 2.5%;
+				height: auto;
+				margin-top: 3vh;
+				padding-bottom: 6vh;
+				flex-direction: row;
+				justify-content: space-between;
+				li {
+					float: left;
+					width: 25%;
+					border-bottom: 2px solid;
+					border-color: transparent;
+			    text-align: center;
+					&:hover {
+						.line {
+							display: none;
+						}
+					}
+					&.active {
+						border-color: #fff;
+						.line {
+							display: none;
+						}
+					}
+					&:after {
+						display: none;
+					}
+					.line {
+						display: none;
+					}
+					a {
+						font-size: 2.5vh;
+					}
+				}
+			}
+			.link-box {
+				width: 95%;
+				margin-left: 2.5%;
+				margin-top: 0;
+				height: auto;
+			}
+		}
+	}
+	form {
+		&.orderDemo {
+			width: 35%;
 		}
 	}
 }

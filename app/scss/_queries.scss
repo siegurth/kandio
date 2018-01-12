@@ -1,10 +1,5 @@
-@media screen and (max-width: 980px) {
-	article {
-		&.top-space {
-    	padding-top: 20vh;
-		}
-	}
-}
+
+
 @media screen and (max-width: 768px) {
 	.wrapper {
 		.popup.mob {
@@ -36,9 +31,11 @@
 			}
 			form {
 				width: 100%;
+				padding-top: 5vh;
 				h4 {
 					text-align: center;
-					font-size: 6vh;
+					font-size: 32px;
+					padding-bottom: 5vh;
 				}
 				p {
 					display: none;
@@ -115,7 +112,6 @@
 				left: 50%;
 				margin-left: -80px;
 				bottom: -10vh;
-		    //height: 6vh;width: 50vw;font-size: 5vw;line-height: 6vh;padding-left: 13vw;
 		    width: 159px;
 		    height: 40px;
     		font-size: 18px;
@@ -169,6 +165,9 @@
 		padding-bottom: 3vh;
 		text-align: center;
 		float: left;
+		&.flex {
+			align-items: center;
+		}
 		&.top-space {
     	padding-top: 0vh;
 		}
@@ -271,7 +270,7 @@
 			font-size: 5vh;
 		}
 		h2 {
-			font-size: 11vw;
+			font-size: 36px;
 		}
 		h4 {
 			&:after {
@@ -284,7 +283,7 @@
 			}
 		}
 		h5 {
-			font-size: 5vw;
+			font-size: 18px;
 			width: 80%;
 			//margin-left: 10%;
     	text-align: center;
